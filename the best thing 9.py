@@ -10,7 +10,7 @@ else:
 if 'ran' not in st.session_state or st.session_state.ran < 1:
   st.session_state.ran=20
 if 'level' not in st.session_state:
-  st.session_state.level=1
+  st.session_state.level=file
 if 'num' not in st.session_state:
   st.session_state.num=0
 if 'sc' not in st.session_state:
@@ -70,7 +70,6 @@ if st.session_state.feed=="false":
 if st.session_state.num > 0 and st.session_state.num % 10 == 0:
   st.success("انت بطل! تحدي صديقك انه بالطبع لن يستطيع ان يصل لمستواك  ")
   if st.button("الليفل التالي "):
-     st.write("Your secret_code is",st.session_state.Secret_number)
      st.balloons()
      st.session_state.level+=1
      st.session_state.ran+=20
