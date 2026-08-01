@@ -6,7 +6,7 @@ if os.path.exists("level_number.txt"):
  with open("level_number.txt","r") as f:
   file=int(f.read().strip())
 else:
- file=0
+ file=1
 if 'ran' not in st.session_state or st.session_state.ran < 1:
   st.session_state.ran=20
 if 'level' not in st.session_state:
