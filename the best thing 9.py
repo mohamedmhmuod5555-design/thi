@@ -70,7 +70,6 @@ if st.session_state.feed=="false":
 if st.session_state.num > 0 and st.session_state.num % 10 == 0:
   st.success("انت بطل! تحدي صديقك انه بالطبع لن يستطيع ان يصل لمستواك  ")
   if st.button("الليفل التالي "):
-     st.session_state.Secret_number+=20
      st.write("Your secret_code is",st.session_state.Secret_number)
      st.balloons()
      st.session_state.level+=1
