@@ -10,7 +10,7 @@ else:
 if 'ran' not in st.session_state or st.session_state.ran < 1:
   st.session_state.ran=20
 if 'level' not in st.session_state:
-  st.session_state.level=0
+  st.session_state.level=1
 if 'num' not in st.session_state:
   st.session_state.num=0
 if 'sc' not in st.session_state:
