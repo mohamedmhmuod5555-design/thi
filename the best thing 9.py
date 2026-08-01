@@ -6,7 +6,7 @@ if os.path.exists("level_number.txt"):
  with open("level_number.txt","r") as f:
   rf= f.read().strip()
   if rf ==""or rf=="0" or rf=="0.0":
-    file=rf
+    file=1
   else:
    file=int(rf)
 else:
