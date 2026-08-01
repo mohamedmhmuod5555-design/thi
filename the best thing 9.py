@@ -4,7 +4,11 @@ import os
 import streamlit as st
 if os.path.exists("level_number.txt"):
  with open("level_number.txt","r") as f:
-  file=int(f.read().strip())
+ rf=int(f.read().strip())
+  if rf ==""or rf=="0" or rf=="0.0":
+    file=rf
+  else:
+   file=int(content)
 else:
  file=1
 if 'ran' not in st.session_state or st.session_state.ran < 1:
