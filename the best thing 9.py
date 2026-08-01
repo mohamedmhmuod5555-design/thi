@@ -3,6 +3,7 @@ import time
 import os
 import streamlit as st
 if os.path.exists("level_number.txt"):
+   os.remove("level_number.txt")
  with open("level_number.txt","r") as f:
   file=int(f.read().strip())
 else:
