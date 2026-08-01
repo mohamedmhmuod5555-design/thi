@@ -5,7 +5,7 @@ import streamlit as st
 if os.path.exists("level_number.txt"):
  with open("level_number.txt","r") as f:
   rf=int(f.read().strip())
-   if rf ==""or rf=="0" or rf=="0.0":
+  if rf ==""or rf=="0" or rf=="0.0":
     file=rf
   else:
    file=int(content)
