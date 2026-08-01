@@ -75,7 +75,7 @@ if st.session_state.num > 0 and st.session_state.num % 10 == 0:
      st.balloons()
      st.session_state.level+=1
      st.session_state.ran+=20
-     with open("level_number.txt","w"):
+     with open("level_number.txt","w") as f:
       f.write(str(st.session_state.level))
 st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions" )
 st.write("you are in level",st.session_state.level)
