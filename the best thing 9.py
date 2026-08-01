@@ -25,8 +25,7 @@ if 'sign' not in st.session_state:
  st.session_state.sign=random.choice(['+','-','*','/'])
 if 'feed' not in st.session_state:
  st.session_state.feed=0
-if 'Secret_number' not in st.session_state:
- st.session_state.Secret_number=st.session_state.level*189//4873
+
 
 num1 = st.session_state.num1
 num2 = st.session_state.num2
@@ -40,10 +39,6 @@ if sign=='*':
 if sign=='/':
  sc=num1//num2 
 st.title("Welcome to Math Game ")
-ch=st.number_input("ما لفلك ")
-s=st.number_input("ادخل الرقم السري لهذا المستوي ")
-if s==st.session_state.Secret_number:
-  st.session_state.level=ch
 st.write(num1,sign,num2)
 number=st.number_input("ادخل النتيجه ")
 if st.button("تأكيد التخمين "):
