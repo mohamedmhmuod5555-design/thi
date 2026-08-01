@@ -8,7 +8,7 @@ if os.path.exists("level_number.txt"):
   if rf ==""or rf=="0" or rf=="0.0":
     file=1
   else:
-   file=int(rf)
+   file=float(rf)
 else:
  file=1
 if 'ran' not in st.session_state or st.session_state.ran < 1:
